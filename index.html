@@ -1,0 +1,373 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>krakenex documentation &mdash; krakenex 0.0.6.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="krakenex 0.0.6.1 documentation" href="#"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> krakenex
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.6.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="simple">
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">krakenex</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="#">Docs</a> &raquo;</li>
+      
+    <li>krakenex documentation</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="krakenex-documentation">
+<h1>krakenex documentation<a class="headerlink" href="#krakenex-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<div class="section" id="module-krakenex">
+<span id="classes-and-methods"></span><h2>Classes and methods<a class="headerlink" href="#module-krakenex" title="Permalink to this headline">¶</a></h2>
+<p>These are the classes defined by <cite>krakenex</cite>. Every class is in
+a separate module.</p>
+<dl class="class">
+<dt id="krakenex.API">
+<em class="property">class </em><code class="descclassname">krakenex.</code><code class="descname">API</code><span class="sig-paren">(</span><em>key=''</em>, <em>secret=''</em>, <em>conn=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/krakenex/api.html#API"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#krakenex.API" title="Permalink to this definition">¶</a></dt>
+<dd><p>Kraken.com cryptocurrency Exchange API.</p>
+<dl class="method">
+<dt id="krakenex.API.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>key=''</em>, <em>secret=''</em>, <em>conn=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/krakenex/api.html#API.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#krakenex.API.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an object with authentication information.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>key</strong> (<a class="reference external" href="https://docs.python.org/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; key required to make queries to the API</li>
+<li><strong>secret</strong> (<a class="reference external" href="https://docs.python.org/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; private key used to sign API messages</li>
+<li><strong>conn</strong> (<a class="reference internal" href="#krakenex.Connection" title="krakenex.Connection"><em>krakenex.Connection</em></a>) &#8211; connection TODO</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="krakenex.API.__weakref__">
+<code class="descname">__weakref__</code><a class="headerlink" href="#krakenex.API.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="krakenex.API._query">
+<code class="descname">_query</code><span class="sig-paren">(</span><em>urlpath</em>, <em>req={}</em>, <em>conn=None</em>, <em>headers={}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/krakenex/api.html#API._query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#krakenex.API._query" title="Permalink to this definition">¶</a></dt>
+<dd><p>Low-level query handling.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>urlpath</strong> (<a class="reference external" href="https://docs.python.org/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; API URL path sans host</li>
+<li><strong>req</strong> (<a class="reference external" href="https://docs.python.org/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; additional API request parameters</li>
+<li><strong>conn</strong> (<a class="reference internal" href="#krakenex.Connection" title="krakenex.Connection"><em>krakenex.Connection</em></a>) &#8211; connection TODO</li>
+<li><strong>headers</strong> (<a class="reference external" href="https://docs.python.org/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; HTTPS headers</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="krakenex.API.load_key">
+<code class="descname">load_key</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/krakenex/api.html#API.load_key"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#krakenex.API.load_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load key and secret from file.</p>
+<p>Argument:
+:param path: path to keyfile
+:type path: str</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="krakenex.API.query_private">
+<code class="descname">query_private</code><span class="sig-paren">(</span><em>method</em>, <em>req={}</em>, <em>conn=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/krakenex/api.html#API.query_private"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#krakenex.API.query_private" title="Permalink to this definition">¶</a></dt>
+<dd><p>API queries that require a valid key/secret pair.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>method</strong> (<a class="reference external" href="https://docs.python.org/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; API method name</li>
+<li><strong>req</strong> (<a class="reference external" href="https://docs.python.org/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; additional API request parameters</li>
+<li><strong>conn</strong> (<a class="reference internal" href="#krakenex.Connection" title="krakenex.Connection"><em>krakenex.Connection</em></a>) &#8211; connection TODO</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="krakenex.API.query_public">
+<code class="descname">query_public</code><span class="sig-paren">(</span><em>method</em>, <em>req={}</em>, <em>conn=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/krakenex/api.html#API.query_public"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#krakenex.API.query_public" title="Permalink to this definition">¶</a></dt>
+<dd><p>API queries that do not require a valid key/secret pair.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>method</strong> (<a class="reference external" href="https://docs.python.org/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; API method name</li>
+<li><strong>req</strong> (<a class="reference external" href="https://docs.python.org/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; additional API request parameters</li>
+<li><strong>conn</strong> (<a class="reference internal" href="#krakenex.Connection" title="krakenex.Connection"><em>krakenex.Connection</em></a>) &#8211; connection TODO</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="krakenex.API.set_connection">
+<code class="descname">set_connection</code><span class="sig-paren">(</span><em>conn</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/krakenex/api.html#API.set_connection"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#krakenex.API.set_connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set an existing connection to be used as a default in queries.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>conn</strong> (<a class="reference internal" href="#krakenex.Connection" title="krakenex.Connection"><em>krakenex.Connection</em></a>) &#8211; connection</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="krakenex.Connection">
+<em class="property">class </em><code class="descclassname">krakenex.</code><code class="descname">Connection</code><span class="sig-paren">(</span><em>uri='api.kraken.com'</em>, <em>timeout=30</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/krakenex/connection.html#Connection"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#krakenex.Connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Kraken.com connection handler.</p>
+<dl class="method">
+<dt id="krakenex.Connection.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>uri='api.kraken.com'</em>, <em>timeout=30</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/krakenex/connection.html#Connection.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#krakenex.Connection.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an object for reusable connections.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>uri</strong> (<a class="reference external" href="https://docs.python.org/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; URI to connect to.</li>
+<li><strong>timeout</strong> (<a class="reference external" href="https://docs.python.org/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) &#8211; blocking operations&#8217; timeout (in seconds).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TODO</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last">TODO</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="krakenex.Connection.__weakref__">
+<code class="descname">__weakref__</code><a class="headerlink" href="#krakenex.Connection.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="krakenex.Connection._request">
+<code class="descname">_request</code><span class="sig-paren">(</span><em>url</em>, <em>req={}</em>, <em>headers={}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/krakenex/connection.html#Connection._request"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#krakenex.Connection._request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send POST request to API server.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>url</strong> (<a class="reference external" href="https://docs.python.org/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; fully-qualified URL with all necessary urlencoded
+information</li>
+<li><strong>req</strong> (<a class="reference external" href="https://docs.python.org/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; additional API request parameters</li>
+<li><strong>headers</strong> (<a class="reference external" href="https://docs.python.org/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; additional HTTPS headers, such as API-Key and API-Sign</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="krakenex.Connection.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/krakenex/connection.html#Connection.close"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#krakenex.Connection.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close the connection.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Noel Maersk.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.6.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
