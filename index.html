@@ -147,8 +147,8 @@ a separate module.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>key</strong> (<a class="reference external" href="https://docs.python.org/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; key required to make queries to the API</li>
-<li><strong>secret</strong> (<a class="reference external" href="https://docs.python.org/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; private key used to sign API messages</li>
+<li><strong>key</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; key required to make queries to the API</li>
+<li><strong>secret</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; private key used to sign API messages</li>
 <li><strong>conn</strong> (<a class="reference internal" href="#krakenex.Connection" title="krakenex.Connection"><em>krakenex.Connection</em></a>) &#8211; connection TODO</li>
 </ul>
 </td>
@@ -172,10 +172,10 @@ a separate module.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>urlpath</strong> (<a class="reference external" href="https://docs.python.org/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; API URL path sans host</li>
-<li><strong>req</strong> (<a class="reference external" href="https://docs.python.org/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; additional API request parameters</li>
+<li><strong>urlpath</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; API URL path sans host</li>
+<li><strong>req</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; additional API request parameters</li>
 <li><strong>conn</strong> (<a class="reference internal" href="#krakenex.Connection" title="krakenex.Connection"><em>krakenex.Connection</em></a>) &#8211; connection TODO</li>
-<li><strong>headers</strong> (<a class="reference external" href="https://docs.python.org/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; HTTPS headers</li>
+<li><strong>headers</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; HTTPS headers</li>
 </ul>
 </td>
 </tr>
@@ -187,9 +187,14 @@ a separate module.</p>
 <dt id="krakenex.API.load_key">
 <code class="descname">load_key</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/krakenex/api.html#API.load_key"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#krakenex.API.load_key" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load key and secret from file.</p>
-<p>Argument:
-:param path: path to keyfile
-:type path: str</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; path to keyfile</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
@@ -201,8 +206,8 @@ a separate module.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>method</strong> (<a class="reference external" href="https://docs.python.org/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; API method name</li>
-<li><strong>req</strong> (<a class="reference external" href="https://docs.python.org/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; additional API request parameters</li>
+<li><strong>method</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; API method name</li>
+<li><strong>req</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; additional API request parameters</li>
 <li><strong>conn</strong> (<a class="reference internal" href="#krakenex.Connection" title="krakenex.Connection"><em>krakenex.Connection</em></a>) &#8211; connection TODO</li>
 </ul>
 </td>
@@ -220,8 +225,8 @@ a separate module.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>method</strong> (<a class="reference external" href="https://docs.python.org/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; API method name</li>
-<li><strong>req</strong> (<a class="reference external" href="https://docs.python.org/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; additional API request parameters</li>
+<li><strong>method</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; API method name</li>
+<li><strong>req</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; additional API request parameters</li>
 <li><strong>conn</strong> (<a class="reference internal" href="#krakenex.Connection" title="krakenex.Connection"><em>krakenex.Connection</em></a>) &#8211; connection TODO</li>
 </ul>
 </td>
@@ -259,8 +264,8 @@ a separate module.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>uri</strong> (<a class="reference external" href="https://docs.python.org/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; URI to connect to.</li>
-<li><strong>timeout</strong> (<a class="reference external" href="https://docs.python.org/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) &#8211; blocking operations&#8217; timeout (in seconds).</li>
+<li><strong>uri</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; URI to connect to.</li>
+<li><strong>timeout</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) &#8211; blocking operations&#8217; timeout (in seconds).</li>
 </ul>
 </td>
 </tr>
@@ -289,10 +294,10 @@ a separate module.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>url</strong> (<a class="reference external" href="https://docs.python.org/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; fully-qualified URL with all necessary urlencoded
+<li><strong>url</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; fully-qualified URL with all necessary urlencoded
 information</li>
-<li><strong>req</strong> (<a class="reference external" href="https://docs.python.org/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; additional API request parameters</li>
-<li><strong>headers</strong> (<a class="reference external" href="https://docs.python.org/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; additional HTTPS headers, such as API-Key and API-Sign</li>
+<li><strong>req</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; additional API request parameters</li>
+<li><strong>headers</strong> (<a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#dict" title="(in Python v2.7)"><em>dict</em></a>) &#8211; additional HTTPS headers, such as API-Key and API-Sign</li>
 </ul>
 </td>
 </tr>
